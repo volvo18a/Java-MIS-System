@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+*{
+	margin: 0px;
+	padding: 0px;
+}
+	#div1 {
+		width: 728px;
+		height: 108px;
+		margin: 100px auto;
+		position: relative;
+		background: red;
+		overflow: hidden;
+	}
+	#div1 ul {
+		position: absolute;
+	}
+	#div1 ul li {
+		float: left; width: 178px; height: 108px; list-style: none;
+	}
+</style>
+	<title>无缝滚动</title>
+	<script type="text/javascript" src="无缝滚动.js"></script>
+</head>
+<body>
+<a href="javascript:;">向左走</a>
+<a href="javascript:;">向右走</a>
+<div id="div1">
+<ul>
+	<li><img src="images/1.jpg"></li>
+	<li><img src="images/2.jpg"></li>
+	<li><img src="images/3.jpg"></li>
+	<li><img src="images/4.jpg"></li>
+</ul>
+</div>
+</body>
+</html>
