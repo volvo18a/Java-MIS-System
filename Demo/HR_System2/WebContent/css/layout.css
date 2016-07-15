@@ -1,0 +1,574 @@
+/*
+* @Author: wcs
+* @Date:   2016-06-29 10:18:16
+* @Last Modified by:   wcs
+* @Last Modified time: 2016-07-04 15:18:46
+*/
+.ruzhi-yidong-shiyongqi-select-edit-btn{
+	/*background: yellow;*/
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+html,body{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #FAFAFA;
+}
+
+img{
+	border: 0px;
+}
+
+ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	padding: 5px 20px;
+	font-size: 20px;
+	letter-spacing: 1px;
+	color: #000;
+}
+
+table {
+	text-align: center;
+}
+
+.page_header{
+	position: absolute;
+	min-width: 1366px;
+	width: 100%;
+	max-width: 1903px;
+	height: 70px;
+	background-color: #fff;
+	-moz-box-shadow: 0px 1px 5px #888888;
+	box-shadow: 0px 1px 5px #888888;
+	/*background: url("../images/header_bg.png") repeat-x;*/
+}
+
+.page_header #logo {
+	float: left;
+	margin-top: 5px;
+	margin-left: 30px;
+	width: 60px;
+	height: 60px;
+}
+
+.page_header #sys_head {
+	float: left;
+	width: 300px;
+	height: 40px;
+	line-height: 40px;
+	padding-top:15px; 
+	margin-left: 200px;
+	font-size: 30px;
+	letter-spacing: 10px;
+	
+}
+
+
+
+.page_header #logo img {
+	width: 100%;
+	height: 100%;
+}
+
+.page_header #exit{
+	float: right;
+	width: 120px;
+	height: 70px;
+	display: block;
+}
+
+.page_header #welcome {
+	float: left;
+	width: 200px;
+	height: 40px;
+	padding-top:15px; 
+	margin-left: 440px;
+	line-height: 40px;
+	font-size: 20px;
+}
+
+.page_header #exit a{
+	line-height: 70px;
+	margin-right: 10px;
+	color: #000;
+	text-decoration: none;
+	letter-spacing: 1px;
+	text-shadow: 5px 5px 5px #fff;
+}
+
+#main{
+	position: absolute;
+	top: 70px;
+	min-width: 1366px;
+	width: 100%;
+	max-width: 1903px;
+	height: auto;
+}
+
+#nav{
+	position: absolute;
+	top: 3px;
+	width: 233px;
+	height: 100%;
+	height: auto;
+	background-color: #FAFAFA;
+	box-shadow: 1px 1px 5px #888888;
+/*	background: url("../images/nav_bg.png") repeat-y;*/
+}
+
+.dorplist-left {
+	min-height: 919px;
+}
+
+.dorplist-left li {
+	float: left;
+	margin: 20px auto;
+	position: relative;
+}
+
+.dorplist-left li a {
+	font-size: 20px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	text-shadow: 5px 5px 5px #fff;
+}
+
+.dorplist-left li ul li{
+	float: left;
+	display: block;
+	margin: 15px auto;
+}
+
+.dorplist-left li ul li a{
+	padding: 5px 30px;
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
+.dorplist-dept-op{
+	display: none;
+}
+
+.dorplist-post-op{
+	display: none;
+}
+
+.dorplist-entry-op{
+	display: none;
+}
+
+.thirdNav{
+	display: none;
+	width: 150px;
+	margin-left: 20px;
+}
+
+.dorplist-report-op{
+	display: none;
+}
+
+#main-right {
+	min-width: 1133px;	
+	max-width: 1670px;	
+	min-height: 661px;
+	height: auto;
+	margin-top: 5px;
+	margin-left: 233px;
+	background-color: #FAFAFA;
+	/*background: url("../images/7.jpg") repeat-y;*/
+}
+
+#main-dept {
+	margin-top: -15px;
+	display: none;
+}
+
+#main-dept .btn-info {
+	margin-left: 120px;
+}
+
+#main-dept h2{
+	padding-top: 20px;
+	text-align: center;
+}
+
+#main-dept-table {
+	width: auto;
+	min-height: auto;
+	margin: 30px auto;
+	border-radius: 10px;
+}
+
+#main-dept-table thead {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#new-dept {
+	display: none;
+}
+#new-dept h2{
+	padding-top: 20px;
+	text-align: center;
+}
+
+#new-dept .form-horizontal {
+	margin: 30px auto;
+}
+
+#new-dept .form-horizontal .form-group {
+	width: 700px;
+}
+
+.col-sm-10 input {
+	width: 360px;
+	height: auto;
+}
+
+.col-sm-10 select {
+	width: 360px;
+	height: auto;
+}
+
+.col-sm-10 textarea {
+	width: 360px;
+	min-height: 120px;
+	height: auto;
+}
+.col-sm-6 input {
+	width: 200px;
+	height: auto;
+}
+
+.col-sm-6 select {
+	width: 200px;
+	height: auto;
+}
+
+.probation-box1 input{
+	width: 100px;
+}
+
+.Mod-dept-dial {
+	display: none;
+}
+
+#dept-emp{
+	display: none;
+}
+
+#dept-emp h2 {
+	text-align: center;
+}
+
+#dept-emp-table {
+	width: auto;
+	min-height: auto;
+	margin: 10px auto;
+	border-radius: 10px;
+}
+
+#dept-emp-table thead {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#dept-emp .form-inline {
+	width: 700px;
+	height: 50px;
+	margin: 20px auto;
+}
+
+#dept-emp .form-inline select{
+	width: 120px;
+	height: 35px;
+}
+
+#dept-emp .form-inline input{
+	margin-left: 10px;
+	width: 90px;
+	height: 35px;
+}
+
+#main-post {
+	display: none;
+}
+
+#main-post .btn-info {
+	margin-left: 360px;
+}
+
+#main-post h2{
+	padding-top: 20px;
+	text-align: center;
+}
+
+#main-post-table {
+	width: auto;
+	min-height: auto;
+	margin: 30px auto;
+	border-radius: 10px;
+}
+
+#main-post-table thead {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#new-post {
+	display: none;
+}
+
+#new-post h2{
+	padding-top: 20px;
+	text-align: center;
+}
+
+.form-horizontal {
+	width: 700px;
+	height: auto;
+	margin: 30px auto;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	
+}
+
+.form-horizontal .form-group {
+	width: 700px;
+	margin: 30px 0px 0px 50px;
+}
+
+.col-sm-10 input {
+	width: 360px;
+	height: auto;
+}
+
+.col-sm-10 select {
+	width: 360px;
+	height: auto;
+}
+
+.col-sm-10 textarea {
+	width: 360px;
+	min-height: 120px;
+	height: auto;
+}
+
+#main-post{
+	display: none;
+}
+
+.Mod-post-dial {
+	display: none;
+}
+
+#main-post h2 {
+	text-align: center;
+}
+
+#main-post-table {
+	width: auto;
+	min-height: auto;
+	margin: 30px auto;
+	border-radius: 10px;
+}
+
+#main-post-table thead {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#post-emp{
+	display: none;
+}
+
+#post-emp h2 {
+	text-align: center;
+}
+
+#post-emp-table {
+	width: auto;
+	min-height: auto;
+	margin: 20px auto;
+	border-radius: 10px;
+}
+
+#post-emp-table thead {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#post-emp .form-inline{
+	width: 700px;
+	height: 50px;
+	margin: 20px auto;
+}
+
+#post-emp .form-inline select{
+	width: 120px;
+	height: 35px;
+	display: inline;
+}
+
+#post-emp .form-inline input{
+	margin-left: 10px;
+	width: 90px;
+	height: 35px;
+	display: inline;
+}
+
+
+/*jQuery-ui默认样式修改*/
+
+/*修改当天日期的样式*/
+.ui-datepicker-today .ui-state-highlight {
+	border:1px solid #eee;
+	color:#f60;
+}
+/*修改选定日期的样式*/
+.ui-datepicker-current-day .ui-state-active {
+	border:1px solid #eee;
+	color:#06f;
+}
+/*修改查询按钮样式*/
+#new-search,#leave-search,#dep-search,#post-search,#emp-search,.report-reset,.import{
+	width:65px;
+	height:33px;
+	line-height: 15px;
+	text-align: center;
+	margin-top:-6px;
+	font-size:16px;
+}
+.import{
+	width:100px;
+}
+/*修改第5个选项表的宽度*/
+#report-5 a{
+	width:145px;
+	text-align: center;
+}
+/*修改所有input,select里面的字体大小*/
+#report input,#report select{
+	font-size:16px;
+}
+
+
+
+
+
+
+/*自定义样式*/
+#report{
+	margin-top: -15px;
+	display: none;
+}
+
+#report h2 {
+	padding-top: 20px;
+	text-align: center;
+}
+
+#report-tabs {
+	width: 950px;
+	margin: 0px auto;
+}
+
+#report-leader li{
+	margin-left: 3px;
+}
+
+#report-term{
+	text-align:center;
+	margin:0 auto;
+}
+.report span{
+	margin-right:8px ;
+}
+.date1,.date2{
+	width:120px;
+	height:25px;
+}
+.report .dep,#emp-year,#emp-month{
+	width:100px;
+	height:31px;
+}
+.emp{
+	margin:30px auto;
+}
+.emp tr{
+	height:35px;
+	background: #f0f0f0;
+	text-align:center;
+}
+.emp td{
+	width:100px;
+	border:1px solid #9d9d9d;
+}
+
+.ruzhi-yidong-shiyongqi,.ruzhi-yidong-bumen,.ruzhi-yidong-gangwei,.emp-manage-dimmision{
+	display: none;
+	width: 900px;
+	margin:auto;
+}
+
+.ruzhi-yidong-shiyongqi-select,.ruzhi-yidong-bumen-select,.ruzhi-yidong-gangwei-select,.ruzhi-lizhi-select{
+	display: none;
+	width: 900px;
+	margin:auto;
+	margin-top: -15px;
+}
+.ruzhi-yidong-shiyongqi-select .ruzhi-h3,.ruzhi-yidong-bumen-select .ruzhi-h3,.ruzhi-yidong-gangwei-select .ruzhi-h3,.ruzhi-lizhi-select .ruzhi-h3{
+	text-align: center;
+}
+.ruzhi-xinxi-jibenxinxi,.ruzhi-xinxi-qitaxinxi{	
+	display: none;
+	width: 900px;
+	margin:auto;
+}
+.ruzhi-xinxi-jibenxinxi-select,.ruzhi-xinxi-qitaxinxi-select{
+	display: none;
+	width: 900px;
+	margin:auto;
+	margin-top: -15px;
+}
+.ruzhi-xinxi-jibenxinxi-select .ruzhi-h3,.ruzhi-xinxi-qitaxinxi-select .ruzhi-h3{
+	text-align: center;
+}
+ .ruzhi-xinxi-jibenxinxi-select,.ruzhi-yidong-shiyongqi .delay-time-box{
+ 	display: none;
+ }
+ .probation-box{
+ 	display: none;
+ 
+ }
+ .ruzhi-xinxi-jibenxinxi-select-list{
+ 	margin-bottom: 120px;
+ }
+ .probation-box1{
+ 	width: 356px;
+ 	
+ }
+ .probation-box2{
+ 	width: 356px;
+ 	
+ }
+ .ruzhi-h3 {
+ 	padding-top: 20px;
+ }
+   #shiyongqi-tabs .form-horizontal,#dept-change-tabs .form-horizontal,#post-change-tabs .form-horizontal,#lizhi-manage-tabs .form-horizontal{
+       margin:0;
+   }
